@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300);
+
+body{
+  font-family: 'Merriweather', serif;
+}
+
+#page{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5px 0 5px;
+}
+
+p{
+  font-size: 14px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 8px 0 8px 0;
+}

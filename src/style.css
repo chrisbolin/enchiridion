@@ -4,6 +4,17 @@ body{
   font-family: 'Merriweather', serif;
 }
 
+p{
+  font-size: 14px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 8px 0 8px 0;
+}
+
+a{
+  cursor: pointer;  
+}
+
 #page{
   max-width: 500px;
   margin-left: auto;
@@ -11,9 +22,10 @@ body{
   padding: 0 5px 0 5px;
 }
 
-p{
-  font-size: 14px;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 8px 0 8px 0;
+#nav{
+  text-align: center;
+}
+
+#nav a{
+  text-decoration: none;
 }

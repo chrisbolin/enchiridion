@@ -2,11 +2,9 @@
 
 body{
   font-family: 'Merriweather', serif;
-  font-size: 14px;
-}
-
-.mini-header{
-  font-size: 1.6em;
+  font-size: 15px;
+  color: #0D0D0D;
+  background-color: #FCFCFC;
 }
 
 p{
@@ -15,9 +13,42 @@ p{
   padding: 8px 0 8px 0;
 }
 
+h1, h2, h3 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+h1{ font-size: 2.25em; }
+h2{ font-size: 1.5em; }
+h3{ font-size: 1em; font-weight: normal;}
+
 a{
   cursor: pointer;  
 }
+
+hr {
+    padding: 0;
+    margin: 45px 0 15px 0;
+    border: none;
+    border-top: 1px solid #0D0D0D;
+    color: #0D0D0D;
+    text-align: center;
+}
+
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.mini-header{  
+  margin-right: 15px;
+  font-weight: bold;
+}
+
 
 #page{
   max-width: 500px;

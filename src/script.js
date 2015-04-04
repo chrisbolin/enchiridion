@@ -34,7 +34,11 @@ var prepareText = function(){
 
 var flipPage = function(back){
   var direction = back? -1 : 1;
-  location.hash = '#' + (state.start + direction * state.offset);
+  var newState = state.start + direction * state.offset;
+  if (newState < 0) {
+    newState = 0;
+  }
+  location.hash = '#' + newState;
 };
 
 document.getElementById('forward-button').addEventListener('click', function() {
@@ -45,8 +49,18 @@ document.getElementById('back-button').addEventListener('click', function() {
   flipPage(true);
 }, false);
 
-window.addEventListener("hashchange", function(){
+window.addEventListener('hashchange', function(){
   renderPage();
+}, false);
+
+window.addEventListener('keydown', function(e){
+  e = e || window.event;
+
+  if (e.keyCode == '37') {
+     flipPage(true); // left arrow --> back
+  } else if (e.keyCode == '39') {
+     flipPage(); // right arrow --> forward
+  }
 }, false);
 
 init();

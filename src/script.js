@@ -26,9 +26,19 @@ var prepareText = function(){
   state.offset = 600;
   
   var pageText = text.substring(state.start, state.start + state.offset);
+  for (var i = pageText.length - 1; i >= 0; i--) {
+    var chr = pageText[i];
+    if (chr === ' ' || chr === '\n'){
+      pageText = pageText.substring(0,i);
+      state.offset = i;
+      break;
+    }
+  };
+
   pageText = '<p>' + pageText + '</p>'; // wrap in <p>
   pageText = pageText.replace(/\n\n/g,'</p><p>'); // double return -> new <p> 
   
+
   return pageText;
 };
 

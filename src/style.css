@@ -1,12 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,700);
 
 body{
   font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.mini-header{
+  font-size: 1.6em;
 }
 
 p{
-  font-size: 14px;
-  line-height: 1.5em;
+  line-height: 1.8em;
   margin: 0;
   padding: 8px 0 8px 0;
 }
@@ -20,12 +24,4 @@ a{
   margin-left: auto;
   margin-right: auto;
   padding: 0 5px 0 5px;
-}
-
-#nav{
-  text-align: center;
-}
-
-#nav a{
-  text-decoration: none;
 }

@@ -1,8 +1,9 @@
 # The Enchiridion
-
-### by Epictetus, c. AD 125. translated by Elizabeth Carter, c. AD 1750.
-
------
+#
+# by Epictetus, c. AD 125.
+# Translated by Elizabeth Carter, c. AD 1750.
+#
+# This text is in the public domain.
 
 1. Some things are in our control and others not. Things in our control
 are opinion, pursuit, desire, aversion, and, in a word, whatever are
@@ -697,5 +698,3 @@ And this third:
 
 "O Crito, if it thus pleases the gods, thus let it be. Anytus and
 Melitus may kill me indeed, but hurt me they cannot."
-
------

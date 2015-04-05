@@ -17,6 +17,12 @@ var build = function(){
 var buildContent = function(){
   var text = fs.readFileSync(contentPath, encoding);
 
+  // remove comments
+  text = text.replace(/^#.*\n/gm, '');
+
+  // trim whitespace
+  text = text.replace(/^\s+/g, '');
+
   // basic paragraph handling
   text = '<p>' + text + '</p>'; // wrap in <p>
   text = text.replace(/\n\n/g,'</p>\n<p>'); // double return -> new <p> 
@@ -24,12 +30,6 @@ var buildContent = function(){
   // numbered headers
   text = text.replace(/<p>(\d+\.)/g, '<p><span class="mini-header">$1</span>'); // bold numbered headers
   
-  // micro-markdown
-  text = text.replace(/<p># (.*?)<\/p>/g, '<h1>$1</h1>'); // make h1 headers
-  text = text.replace(/<p>## (.*?)<\/p>/g, '<h2>$1</h2>'); // make h1 headers
-  text = text.replace(/<p>### (.*?)<\/p>/g, '<h3>$1</h3>'); // make h1 headers
-  text = text.replace(/<p>-{3,}<\/p>/g, '<hr>'); // make h1 headers
-
   return text;
 };
 

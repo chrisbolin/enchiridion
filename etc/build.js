@@ -34,9 +34,17 @@ var buildContent = function(){
 };
 
 var buildIndex = function(content){
-  var template = fs.readFileSync(templatePath).toString();
+  var index = fs.readFileSync(templatePath).toString();
+  
+  // insert content
   var contentTag = '{{content}}';
-  return template.replace(contentTag, content);
+  index = index.replace(contentTag, content);
+  
+  // insert timestamps
+  var timestampTagPattern = /{{timestamp}}/g;
+  index = index.replace(timestampTagPattern, Date.now());
+
+  return index;
 };
 
 build();

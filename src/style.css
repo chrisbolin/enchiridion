@@ -4,7 +4,8 @@ body{
   font-family: 'Merriweather', serif;
   font-size: 15px;
   color: #0D0D0D;
-  background-color: #FCFCFC;
+  background-color: #501E42;
+  margin: 0;
 }
 
 p{
@@ -15,7 +16,7 @@ p{
 
 h1{
   font-size: 2.25em;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 h2{ font-size: 1.5em; }
@@ -45,12 +46,20 @@ hr:after {
     background: white;
 }
 
+#window {
+  background-color: #FCFCFC;
+}
+
 #header, #footer{
   text-align: center;
 }
 
+#header{
+  padding-top: 40px;
+}
+
 #footer{
-  margin-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 #footer p{
@@ -62,10 +71,9 @@ hr:after {
   font-weight: bold;
 }
 
-
 #page{
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 5px 0 5px;
+  padding: 0 10px 0 10px;
 }

@@ -40,23 +40,43 @@ hr.fancy:after {
   padding: 0 0.25em;
   background: white; }
 
+a {
+  color: #0d0d0d;
+  font-style: italic; }
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
+a.button {
+  font-style: normal; }
+  a.button:hover {
+    text-decoration: none; }
+
 #window {
   background-color: #fcfcfc; }
 
-#header, #footer {
-  text-align: center; }
-
 #header {
-  padding: 40px 0 30px 0; }
+  padding-bottom: 30px; }
+  #header #menu {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 40px; }
+  #header #title {
+    text-align: center;
+    padding: 25px 0 40px 0; }
+  #header #about-box {
+    margin-bottom: 150px; }
+    #header #about-box #about-close {
+      float: right;
+      font-size: 2em;
+      text-align: right; }
 
 #footer {
+  text-align: center;
   padding: 30px 0 30px 0; }
 
 #footer p {
   font-size: 0.7em; }
-
-#title {
-  padding: 25px 0 40px 0; }
 
 #page {
   max-width: 500px;
@@ -70,3 +90,9 @@ hr.fancy:after {
 
 .upper {
   text-transform: uppercase; }
+
+.hidden {
+  display: none; }
+
+.shown {
+  display: inherit; }

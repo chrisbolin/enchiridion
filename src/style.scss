@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,700);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+
+$text-color: #0D0D0D;
+$background-color: #FCFCFC;
+
+body{
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  color: $text-color;
+  background-color: $text-color;
+  margin: 0;
+}
+
+p{
+  line-height: 1.8em;
+  margin: 0;
+  padding: 8px 0 8px 0;
+}
+
+h1, h2{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2{
+  padding-top: 6px;
+  font-size: 1.5em;
+}
+
+hr {
+  padding: 0;
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid $text-color;
+  color: $text-color;
+  text-align: center;
+}
+
+hr.fancy:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+#window {
+  background-color: $background-color;
+}
+
+#header, #footer{
+  text-align: center;
+}
+
+#header{
+  padding: 40px 0 30px 0;
+}
+
+#footer{
+  padding: 30px 0 30px 0;
+}
+
+#footer p{
+  font-size: 0.7em;
+}
+
+#title{
+  padding: 25px 0 40px 0;
+}
+
+#page{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+}
+
+.mini-header{  
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+

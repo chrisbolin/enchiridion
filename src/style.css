@@ -1,41 +1,36 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,700);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
-
-body{
+body {
   font-family: 'Merriweather', serif;
   font-size: 15px;
-  color: #0D0D0D;
-  background-color: #000;
-  margin: 0;
-}
+  color: #0d0d0d;
+  background-color: #0d0d0d;
+  margin: 0; }
 
-p{
+p {
   line-height: 1.8em;
   margin: 0;
-  padding: 8px 0 8px 0;
-}
+  padding: 8px 0 8px 0; }
 
-h1, h2{
+h1, h2 {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 400;
   font-size: 3em;
-  margin: 0;
-}
+  margin: 0; }
 
-h2{
+h2 {
   padding-top: 6px;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 hr {
   padding: 0;
   margin: 10px 0;
   border: none;
-  border-top: 1px solid #0D0D0D;
-  color: #0D0D0D;
-  text-align: center;
-}
+  border-top: 1px solid #0d0d0d;
+  color: #0d0d0d;
+  text-align: center; }
 
 hr.fancy:after {
   content: "§";
@@ -43,46 +38,35 @@ hr.fancy:after {
   position: relative;
   top: -0.7em;
   padding: 0 0.25em;
-  background: white;
-}
+  background: white; }
 
 #window {
-  background-color: #FCFCFC;
-}
+  background-color: #fcfcfc; }
 
-#header, #footer{
-  text-align: center;
-}
+#header, #footer {
+  text-align: center; }
 
-#header{
-  padding: 40px 0 30px 0;
-}
+#header {
+  padding: 40px 0 30px 0; }
 
-#footer{
-  padding: 30px 0 30px 0;
-}
+#footer {
+  padding: 30px 0 30px 0; }
 
-#footer p{
-  font-size: 0.7em;
-}
+#footer p {
+  font-size: 0.7em; }
 
-#title{
-  padding: 25px 0 40px 0;
-}
+#title {
+  padding: 25px 0 40px 0; }
 
-#page{
+#page {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px 0 10px;
-}
+  padding: 0 10px 0 10px; }
 
-.mini-header{  
+.mini-header {
   margin-right: 15px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-.upper{
-  text-transform: uppercase;
-}
-
+.upper {
+  text-transform: uppercase; }

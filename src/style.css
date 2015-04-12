@@ -21,7 +21,7 @@ h1, h2 {
   margin: 0; }
 
 h2 {
-  padding-top: 6px;
+  padding: 0 5px 0 5px;
   font-size: 1.5em; }
 
 hr {
@@ -64,6 +64,8 @@ a.button {
   #header #title {
     text-align: center;
     padding: 50px 0 72px 0; }
+    #header #title h1 {
+      padding-bottom: 6px; }
   #header #about-box {
     margin-bottom: 150px; }
     #header #about-box #about-close {

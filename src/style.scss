@@ -28,7 +28,7 @@ h1, h2{
 }
 
 h2{
-  padding-top: 6px;
+  padding: 0 5px 0 5px;
   font-size: 1.5em;
 }
 
@@ -84,6 +84,10 @@ a.button{
   #title{
     text-align: center;
     padding: 50px 0 72px 0;
+
+    h1{
+      padding-bottom: 6px;
+    }
   }
 
   #about-box{

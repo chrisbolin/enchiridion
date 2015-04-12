@@ -27,9 +27,12 @@ var buildContent = function(){
   text = '<p>' + text + '</p>'; // wrap in <p>
   text = text.replace(/\n\n/g,'</p>\n<p>'); // double return -> new <p> 
   
-  // numbered headers
-  text = text.replace(/<p>(\d+\.)/g, '<p><span class="mini-header">$1</span>'); // bold numbered headers
-  
+  // numbered headers and dividers
+  var numberedHeaderTemplate = '<p><span class="mini-header">$1</span>';
+  var dividerTemplate = '<div class="divider"></div>';
+  text = text.replace(/<p>(\d+\.)/g, dividerTemplate + numberedHeaderTemplate); // bold numbered headers
+  text = text.replace(dividerTemplate, ''); // remove first divider
+
   return text;
 };
 

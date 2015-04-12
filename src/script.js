@@ -2,15 +2,25 @@ var aboutLink = document.getElementById('about-link');
 var aboutBox = document.getElementById('about-box');
 var aboutClose = document.getElementById('about-close');
 
-aboutLink.onclick = function(){
-  if (aboutBox.className === 'shown'){
-    aboutBox.className = 'hidden';  
-  } else {
-    aboutBox.className = 'shown';  
-  }
-  ;
+Object.prototype.hide = function(){
+  this.className = this.className.replace('shown','hidden');
 };
 
-aboutClose.onclick = function(){
-  aboutBox.className = 'hidden';
+Object.prototype.show = function(){
+  this.className = this.className.replace('hidden','shown');
 };
+
+Object.prototype.isHidden = function(){
+  return this.className.indexOf('hidden') >= 0;
+};
+
+var showHideAboutBox = function(){
+  if (aboutBox.isHidden()){
+    aboutBox.show();
+  } else {
+    aboutBox.hide();
+  }
+};
+
+aboutLink.onclick = showHideAboutBox;
+aboutClose.onclick = showHideAboutBox;

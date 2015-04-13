@@ -41,8 +41,7 @@ hr.fancy:after {
   background: white; }
 
 a {
-  color: #0d0d0d;
-  font-style: italic; }
+  color: #0d0d0d; }
   a:hover {
     cursor: pointer;
     text-decoration: underline; }
@@ -61,6 +60,8 @@ a.button {
     text-align: right;
     padding-top: 20px;
     padding-bottom: 20px; }
+    #header #menu a {
+      font-style: italic; }
   #header #title {
     text-align: center;
     padding: 50px 0 72px 0; }
